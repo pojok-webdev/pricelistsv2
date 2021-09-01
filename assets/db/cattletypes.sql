@@ -1,0 +1,10 @@
+drop table if exists cattletypes;
+create table cattletypes (id int primary key auto_increment, name varchar(100),active varchar(1) default '1',createdate timestamp default current_timestamp);
+insert into cattletypes (name) values ('Sapi Madura');
+insert into cattletypes (name) values ('Sapi Bali');
+insert into cattletypes (name) values ('Sapi Ongole');
+insert into cattletypes (name) values ('Sapi PO');
+insert into cattletypes (name) values ('Sapi Simental');
+insert into cattletypes (name) values ('Sapi Limousin');
+insert into cattletypes (name) values ('Sapi Brahman');
+insert into cattletypes (name) values ('Sapi Lainnya');
