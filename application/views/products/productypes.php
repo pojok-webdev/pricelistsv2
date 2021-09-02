@@ -7,7 +7,7 @@
         <div class="block-fluidx">
             <div class="row-formx clearfixx">
                 <div class="span3">
-                    <input type="checkbox" checked="checked" class="selectall" /> 
+                    <input type="checkbox" checked="checked" class="selectallproducttype" /> 
                     Select All
                 </div>
             </div>

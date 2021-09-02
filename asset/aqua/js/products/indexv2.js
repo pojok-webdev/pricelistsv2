@@ -21,6 +21,15 @@
         $(".productCategory").prop("checked",this.checked);
         doRenew();
     })
+    $(".selectallcategory").on("click",function(){
+        $(".clientCategories").prop("checked",this.checked);
+        doRenew();
+    })
+    $(".selectallproducttype").on("click",function(){
+        $(".productTypes").prop("checked",this.checked);
+        doRenew();
+    })
+    
     $(".productCategory").on("click",function(){
         console.log("val",$(this).val());
         doRenew();
