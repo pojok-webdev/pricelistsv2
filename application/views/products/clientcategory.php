@@ -15,6 +15,12 @@
     </div>
     <div class="row-fluidx">
         <div class="block-fluidx">
+            <div class="row-formx clearfixx">
+                <div class="span3">
+                    <input type="checkbox" checked="checked" value="0" class="clientCategories" /> 
+                    Uncategorized
+                </div>
+            </div>
             <?php foreach($clientcategories['res'] as $category){?>
             <div class="row-formx clearfixx">
                 <div class="span3">

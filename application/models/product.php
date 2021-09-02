@@ -13,7 +13,9 @@ Class Product extends CI_Model{
         );
     }
     function getsbycategory($params){
-        $sql = 'select id,product_id,category_id,name,description,price,discount,unit,producttype_id,clientcategory_id from products ';
+        $sql = 'select * from (select id,product_id,category_id,name,description,price,discount,unit,';
+        $sql.= 'case when producttype_id is null then "0" else producttype_id end producttype_id,';
+        $sql.= 'case when clientcategory_id is null then "0" else clientcategory_id end clientcategory_id from products) A ';
         $sql.= 'where category_id in ('.$params['category_id'].') ';
         $sql.= 'and producttype_id in ('.$params['producttypes'].') ';
         $sql.= 'and clientcategory_id in ('.$params['clientcategories'].') ';
